@@ -1,0 +1,21 @@
+---
+import { IMetaHead } from "@types";
+import Head from "@components/global/Head.astro";
+import Header from "@components/global/Header.astro";
+import Footer from "@components/global/Footer.astro";
+
+import "../styles/styles.css";
+
+const { title, description } = Astro.props as IMetaHead;
+---
+
+<html lang="en" class="dark">
+	<Head title={title} description={description} />
+	<body>
+		<Header />
+		<main class="container">
+			<slot />
+		</main>
+		<Footer />
+	</body>
+</html>
