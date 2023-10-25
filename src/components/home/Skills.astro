@@ -1,0 +1,20 @@
+---
+import { info } from "@data";
+---
+<section class="skills flex-col text-center md:w-1/2">
+  <h2>Skills</h2>
+  <ul>
+    {info.skills.map((item) => (
+      <li>{item}</li>
+    ))}
+  </ul>
+</section>
+<style>
+  li {
+    display: inline-block;
+    background: #131313;
+    margin: 6px;
+    padding: 3px 8px;
+    border-radius: 3px;
+  }
+</style>

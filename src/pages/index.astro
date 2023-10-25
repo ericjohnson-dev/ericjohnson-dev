@@ -1,11 +1,19 @@
 ---
 import { info } from "@data";
 import Skeleton from "@layouts/Skeleton.astro";
+import Footer from "@components/global/Footer.astro";
 import Hero from "@components/home/Hero.astro";
+import About from "@components/home/About.astro";
+import Skills from "@components/home/Skills.astro";
 ---
 <Skeleton
-	title={"Eric Johnson - Full Stack Developer"}
+	title={"Eric Johnson, Full-Stack Developer"}
 	description={info.description}
 >
 	<Hero />
+	<div class="container flex flex-col md:flex-row md:space-x-10">
+		<About />
+		<Skills />
+	</div>
+	<Footer />
 </Skeleton>
