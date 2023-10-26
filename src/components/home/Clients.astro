@@ -1,0 +1,25 @@
+---
+import { info } from "@data";
+---
+<section class="container clients">
+  <h2>Brands I've Worked With</h2>
+  <ul class="flex justify-center">
+    {info.clients.map((item) => (
+      <li><img src={item.src} alt={item.title} /></li>
+    ))}
+  </ul>
+</section>
+<style>
+  ul {
+    margin: -15px -25px;
+  }
+  
+  li {
+    display: inline-block;
+    margin: 15px 25px;
+  }
+
+  img {
+    filter: invert(67%) sepia(27%) saturate(629%) hue-rotate(159deg) brightness(87%) contrast(87%);
+  }
+</style>
