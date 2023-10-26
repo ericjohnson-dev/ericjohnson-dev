@@ -6,11 +6,11 @@ export const info = {
   clients: [
     { title: 'Andis', src: '/images/andis.png' },
     { title: 'Cobian', src: '/images/cobian.png' },
-    { title: 'Switchfoot', src: '/images/switchfoot.png' },
     { title: 'Harrah\'s Resort and Casino', src: '/images/harrahs.png' },
     { title: 'Impala Skate', src: '/images/impala.png' },
     { title: 'Rock Church', src: '/images/rock.png' },
     { title: 'Sunsets Inc', src: '/images/sunsets.png' },
-    { title: 'Isle SUP', src: '/images/isle.png' }
+    { title: 'Isle SUP', src: '/images/isle.png' },
+    { title: 'Switchfoot', src: '/images/switchfoot.png' }
   ]
 };

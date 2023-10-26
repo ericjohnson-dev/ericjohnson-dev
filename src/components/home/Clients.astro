@@ -1,9 +1,9 @@
 ---
 import { info } from "@data";
 ---
-<section class="container clients">
+<section class="container clients text-center md:text-left">
   <h2>Brands I've Worked With</h2>
-  <ul class="flex justify-center">
+  <ul class="flex flex-wrap md:flex-nowrap justify-center">
     {info.clients.map((item) => (
       <li><img src={item.src} alt={item.title} /></li>
     ))}

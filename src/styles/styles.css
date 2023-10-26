@@ -13,7 +13,7 @@
   }
 
   .container {
-    @apply max-w-[1112px] mx-auto px-4;
+    @apply max-w-[1112px] mx-auto px-10 md:px-8;
   }
 
   h1,
@@ -44,6 +44,10 @@
 
   h2 + p {
     margin-top: 0;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
   }
 
   section {
